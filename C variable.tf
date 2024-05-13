@@ -68,6 +68,14 @@ variable "var.secret_key"{
 variable "var.access_key"{
     type = string
 }
+
+variable "var.your_bucket_name_for_backend "{
+    type = string
+}
+
+variable "var.your_bucket_region_for_backend "{
+    type = string
+}
 # variable "image_id" {
 #     type = string
 # }
