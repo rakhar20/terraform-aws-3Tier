@@ -81,11 +81,22 @@ variable "access_key"{
     description = "access key for your iam user"
     type = string
 }
+######
 
-variable "your_bucket_name_for_backend"{
-    description = "for backend"
-    type = string
-}
+
+
+
+
+
+
+
+
+
+
+# variable "your_bucket_name_for_backend"{
+#     description = "for backend"
+#     type = string
+# }
 #####
 
 
