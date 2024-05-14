@@ -86,11 +86,9 @@ variable "your_bucket_name_for_backend"{
     description = "for backend"
     type = string
 }
+#####
 
-# variable "your_bucket_region_for_backend"{
-#    description = "bucket region for backend"
-#    type = string
-# }
+
 
 # variable "your_bucket_region_for_backend"{
 #     description = "bucket region for backend"
