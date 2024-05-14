@@ -4,14 +4,7 @@ resource "aws_instance" "publicweb" {
     subnet_id = aws_subnet.public-web-subnet-1.id
     vpc_security_group_ids = [aws_security_group.web-sg.id]
     key_name = "source-key"
-    user_data = <<-EOF
-        #!?bin/bash
-        yum update-y
-        yum installl -y httpd
-        systemstl start httpd
-        systemctl enable https 
-        echo "<html><body><h1>Web tier"</h1></body></html>" > /var/www/html/index.html
-    EOF
+    user_data = file("${path.module}/install-apache.sh")
     tags = {
         Name = "web-asg"
     }
