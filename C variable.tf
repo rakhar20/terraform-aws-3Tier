@@ -87,15 +87,15 @@ variable "your_bucket_name_for_backend"{
     type = string
 }
 
-#variable "your_bucket_region_for_backend"{
+# variable "your_bucket_region_for_backend"{
 #    description = "bucket region for backend"
 #    type = string
-#}
+# }
 
-variable "your_bucket_region_for_backend"{
-    description = "bucket region for backend"
-    type = string
-}
+# variable "your_bucket_region_for_backend"{
+#     description = "bucket region for backend"
+#     type = string
+# }
 # variable "image_id" {
 #     type = string
 # }
