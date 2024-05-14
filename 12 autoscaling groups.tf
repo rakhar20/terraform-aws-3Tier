@@ -5,6 +5,7 @@ resource "aws_launch_template" "auto-scaling-group" {
     image_id = data.aws_ami.ami.id
     instance_type = var.ins_type
     user_data = file("${path.module}/install-apache.sh")
+    
     network_interfaces {
         subnet_id = aws_subnet.public-web-subnet-1.id
         security_groups = [aws_security_group.web-sg.id]
