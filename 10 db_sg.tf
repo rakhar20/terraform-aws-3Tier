@@ -1,5 +1,5 @@
 resource "aws_security_group" "database-security-group"{
-    name= "db-SG"
+    name = "db-SG"
     vpc_id = aws_vpc.vpc_1.id
 
     ingress {
@@ -16,6 +16,6 @@ resource "aws_security_group" "database-security-group"{
         cidr_blocks = ["0.0.0.0/0"]
     }
     tags = {
-        Namee = "database Security group"
+        Name = "database Security group"
     }
 }
